@@ -1,0 +1,85 @@
+@import "header";
+@import "Mediabf";
+@import "animation";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgb(19, 204, 250);
+  padding: 1em;
+}
+.container {
+  max-width: 1170px;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.brand {
+  text-align: center;
+}
+.wrapper {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.wrapper > * {
+  padding: 1rem;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 20px;
+  grid-template-areas: "div2" "div1";
+}
+img {
+  max-width: 100%;
+}
+.div1 {
+  grid-area: div1;
+  display: grid;
+}
+h1 {
+  padding: 0;
+  width: 35;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about_text_header {
+  font-size: 26px;
+}
+.div2 {
+  display: grid;
+  grid-area: div2;
+  box-shadow: 15px 15px 10px #ccc;
+  color: #222021;
+  text-align: center;
+  border-radius: 5px;
+  min-width: 0;
+  min-height: 0;
+  max-width: 100%;
+}
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-template-areas: "div1 div2";
+  }
+  img {
+    max-width: 100%;
+  }
+  .div1 {
+    grid-area: div1;
+    display: grid;
+  }
+  .div2 {
+    grid-area: div2;
+    display: grid;
+  }
+}

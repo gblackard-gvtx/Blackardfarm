@@ -1,0 +1,38 @@
+@import "header";
+@import "Mediabf";
+@import "animation";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgb(19, 204, 250);
+  padding: 1em;
+}
+parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.parent {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.coming-soon {
+  margin-top: 150px;
+  text-align: center;
+}
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-image: url(/img/pexels-ella-olsson-3026808.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}

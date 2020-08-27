@@ -1,0 +1,49 @@
+@import "header";
+@import "Mediabf";
+@import "animation";
+@import "social";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+}
+#showcase {
+  background-image: url(/img/Eggs-in-nesting-box.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+#showcase h1 {
+  font-size: 60px;
+  line-height: 1.2;
+}
+#showcase p {
+  font-size: 25px;
+}
+
+#showcase .button {
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  border: 5px solid white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+#showcase .button:hover {
+  background: rgb(23, 206, 252);
+  color: honeydew;
+}

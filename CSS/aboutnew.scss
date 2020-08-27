@@ -1,0 +1,46 @@
+@import "header";
+@import "Mediabf";
+@import "animation";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgb(19, 204, 250);
+  padding: 1em;
+}
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #222021;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 0 20px;
+  text-align: ;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+.parent {
+  box-shadow: 0 0 10px 0 #ccc;
+  margin-top: 75px;
+}

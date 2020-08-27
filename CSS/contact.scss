@@ -1,0 +1,105 @@
+@import "header";
+@import "Mediabf";
+@import "animation";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: rgb(19, 204, 250);
+  padding: 1em;
+}
+.container {
+  max-width: 1170px;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+.brand {
+  text-align: center;
+}
+.company-info {
+  background: lightgray;
+}
+.company-text {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 0 1rem;
+}
+.company-info p {
+  text-align: center;
+  margin: 0 0 1rem;
+}
+.wrapper {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+.wrapper > * {
+  padding: 1em;
+}
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 100%;
+}
+.container form label {
+  display: block;
+}
+.contact form p {
+  margin: 0;
+}
+.contact form .full {
+  grid-column: 1 / 3;
+}
+p {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid rgb(23, 206, 252);
+}
+.contact form button {
+  background: rgb(23, 206, 252);
+  border: 0;
+  text-transform: uppercase;
+}
+.contact form button:hover,
+.contact form button:focus {
+  background: #35727b;
+  color: #ccc;
+  outline: 0;
+  transition: background-color 1s ease-out;
+}
+.alert {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(23, 206, 252);
+  color: white;
+  margin-bottom: 10px;
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2rem;
+  }
+  .company-text,
+  .company-info p {
+    text-align: left;
+  }
+}
